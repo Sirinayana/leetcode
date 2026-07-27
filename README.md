@@ -34,4 +34,16 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0202-happy-number](https://github.com/Sirinayana/leetcode/tree/master/0202-happy-number) |
+## Array
+|  |
+| ------- |
+| [0053-maximum-subarray](https://github.com/Sirinayana/leetcode/tree/master/0053-maximum-subarray) |
+## Divide and Conquer
+|  |
+| ------- |
+| [0053-maximum-subarray](https://github.com/Sirinayana/leetcode/tree/master/0053-maximum-subarray) |
+## Dynamic Programming
+|  |
+| ------- |
+| [0053-maximum-subarray](https://github.com/Sirinayana/leetcode/tree/master/0053-maximum-subarray) |
 <!---LeetCode Topics End-->
