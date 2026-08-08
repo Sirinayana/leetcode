@@ -1,16 +1,16 @@
 class Solution:
     def isPalindrome(self, x: int) -> bool:
-        reverse=0
-        temp=x
+        org=x
+        rev=0
         while x>0:
-            digit=x%10
-            reverse=reverse*10+digit
+            last=x%10
+            rev=rev*10+last
             x=x//10
-        if reverse==temp:
-            return True
-        else:
-            return False
-x=121
+        return org==rev
+        
+        
 solution1=Solution()
-print(solution1.isPalindrome(x))
+print(solution1.isPalindrome(121))
+
+
         
