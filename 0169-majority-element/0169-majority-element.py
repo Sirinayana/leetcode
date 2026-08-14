@@ -1,17 +1,16 @@
 class Solution:
     def majorityElement(self, nums: List[int]) -> int:
-        freq = {}
-        for num in nums:
-            if num in freq:
-                freq[num] += 1
+        d={}
+        for i in nums:
+            if i in d:
+                d[i]+=1
             else:
-                freq[num] = 1
-        n = len(nums)
-        for key, value in freq.items():
-            if value > n // 2:
+                d[i]=1
+        for key,value in d.items():
+            if value >(len(nums)/2):
                 return key
-nums=[2,2,1,1,1,2,2]
+nums=[3,2,3]
 solution=Solution()
 print(solution.majorityElement(nums))
-        
+
         
