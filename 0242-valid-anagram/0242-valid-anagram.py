@@ -1,26 +1,18 @@
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
-        if len(s)!=len(t):
-            return False
-        d={}
+        f1={}
+        f2={}
         for i in s:
-            if i in d:
-                d[i]+=1
-            else:
-                d[i]=1
-        for i in t:
-            if i not in d:
-                return False
-            d[i]=d[i]-1
-        if d[i]<0:
-            return False
-        for value in d.values():
-            if value!=0:
-                return False
-        return True
-s="anagram"
-t="nagaram"
-solution1=Solution()
-print(solution1.isAnagram(s,t))
-        
+            f1[i]=f1.get(i,0)+1
+        for j in t:
+            f2[j]=f2.get(j,0)+1
+        if f1==f2:
+            return True
+        return False
+s = "anagram"
+t = "nagaram"
+solution=Solution()
+print(solution.isAnagram(s,t))
+
+
         
